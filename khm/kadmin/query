@@ -1,0 +1,8 @@
+INSERT INTO `khm`.`brands` (`brand_id`, `brand_name`, `brand_code`, `brand_flag`) VALUES (NULL, 'HP', 'hp2200', '1'); //insert brand table
+/********************************/
+SELECT * 
+FROM products p, categories c
+WHERE p.cat_id = c.cat_id
+AND c.cat_parent =1
+LIMIT 0 , 30  //sort by main category
+/************************************/                   

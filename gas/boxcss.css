@@ -1,0 +1,80 @@
+/* #lightbox{
+    height: 0px;
+    width: 0px;
+    position: fixed;
+    top: 20%;
+    left: 15%;
+    overflow: hidden;
+    transition: all 2s ease-in-out;
+}
+/* #lightbox:target{
+height: 30%;
+width: 30%;
+background-color: crimson;
+top: 25%;
+left: 25%;
+/* } */
+#experience{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color:#a39d9d; */
+}
+.timeline{
+    position: relative;
+    width: 75%;
+    /* border: 2px solid black; */
+}
+.timeline-box{
+    position: relative;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    border: 2px solid black;
+    margin: 5px;
+
+}
+.timeline-box:nth-child(2n){
+    left: 53%;
+}
+@media screen and  (max-width:600px) {
+    .timeline-divider{
+        left: 5%;
+    }
+    .timeline-box{
+        left: 12px !important;
+        width: 80%;
+    }
+    .timeline-box::after{
+        left: -12% !important;
+    }
+    
+} 
+div{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    background-color: brown;
+    /* transition: 1s ease-in-out; */
+    transition: 1s steps(4,end);
+}
+div:hover{
+    transform: scale(1.5) translate(150px);
+}
+.cube{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin: 100px;
+}
+.face{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
